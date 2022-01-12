@@ -16,3 +16,15 @@ space_rockets.append(Rocket())
 space_rockets.append(Rocket())
 space_rockets.append(Rocket())
 print(Rocket())
+
+def divide(x, y):
+    try:
+        result = x / y
+    except ZeroDivisionError:
+        print("division by zero!")
+    finally:
+        print("executing finally clause")
+divide(2, 1)
+# result is 2.0
+# executing finally clause
+divide(2, 0)
